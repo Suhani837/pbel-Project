@@ -4,25 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Ordering Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <img src="logo1.jpg" alt="a logo1" id="logo" />
       <div class="nav-links">
-      <a href="#">Menu</a>
-      <a href="#">About us</a>
-      <a href="#">Contact</a>
-      <a href="#">Product</a>
-      <a href="#" id="nav-login">Log in</a>
-      <a href="#" id="nav-order">Order now</a>
+        <a href="#">Menu</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Product</a>
+        <a href="#" id="nav-login">Log in</a>
+        <a href="#" id="nav-order">Order now</a>
       </div>
     </nav>
-    <section class="header">
+  <section class="header">
       <div class="heading">
         <h1>FOOD THAT ARRIVES AS FAST AS HUNGER</h1>
       </div>
@@ -33,15 +39,16 @@
         </h5>
       </div>
       <div class="buttons">
-      <button id="order-button">Order</button>
-      <button id="menu-button">Menu</button>
+        <button id="order-button">Order</button>
+        <button id="menu-button">Menu</button>
       </div>
       <div class="mainImage">
-        <img src="mainimg.png" alt="" height="200px" width="200px"/>
+        <img src="mainImg.jpg" alt="" />
       </div>
     </section>
-    <section class="feature">
+  <section class="feature">
       <div class="leftBox">
+        <div class="welcome">WELCOME</div>
         <div class="featureHead">
           <h1>YOUR FIRST MEAL ARRIVES WITHOUT A DELIVERY FEE</h1>
         </div>
@@ -52,49 +59,65 @@
         </div>
         <div class="features">
           <ul>
-            <li>No hidden charges on your initial order</li>
-            <li>Fresh ingredients sourced from local markets daily</li>
-            <li>A welcome gift for your first real meal</li>
+            <li> <i class="fa-solid fa-receipt"></i> No hidden charges on your initial order</li>
+            <li> <i class="fa-solid fa-leaf"></i>Fresh ingredients sourced from local markets daily</li>
+            <li> <i class="fa-solid fa-gift"></i>A welcome gift for your first real meal</li>
           </ul>
         </div>
-        <button>Order</button>
-        <button>Menu</button>
+        <div class="button">
+        <button id="order">Order</button>
+        <button id="menu">Menu </button>
+        </div>
       </div>
       <div class="rightBox">
-        <img src="" alt="" />
+        <img src="mainImg.jpg" alt=""  />
       </div>
     </section>
     <section class="featureList">
+      <div class="why">WHY</div>
       <h1>THREE THINGS THAT SEPARATE A GOOD MEAL FROM A MEMORY</h1>
-      <h5>We stripped away the unnecessary. What remains is the honest core of a great kitchen.</h5>
+      <div id="content">
+      <p>
+        We stripped away the unnecessary. What remains is the honest core of a
+        great kitchen.
+      </p>
+      </div>
       <div class="boxes">
-        <div>
-          <img src="" alt="" />
+        <div class="box1">
+          
+          <img src="mainImg.jpg" alt="" width="200px" height="200px"/>
+          
+          
           <h3>INGREDIENTS THAT STILL TASTE OF THE EARTH</h3>
           <p>We buy from farmers who know their soil, not from a catalog.</p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="box2">
+          <img src="mainImg.jpg" alt="" width="200px" height="200px"/>
           <h3>SPEED THAT RESPECTS THE HUNGER</h3>
           <p>
             Our riders move with purpose. The food arrives hot, as it should.
           </p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="box3">
+          <img src="mainImg.jpg" alt="" width="200px" height="200px" />
           <h3>ORDERING THAT FEELS LIKE INSTINCT</h3>
           <p>
             A few taps on your screen. No clutter, no confusion, just the menu.
           </p>
         </div>
       </div>
-      <button>Order</button>
-      <button>About</button>
+      <div class="button" id="orderitem">
+      <button id="order">Order</button>
+      <button id="menu">About</button>
+      </div>
     </section>
     <section class="productList">
+      <div class="menucontent">
+      <div class="favourite">FAVOURITES</div>
       <h1>Menu</h1>
       <p>The dishes that keep our kitchen busy through the right</p>
       <button>View all</button>
+      </div>
       <div class="sliderBox">
         <div class="item">
           <img src="" alt="" />
@@ -151,17 +174,19 @@
           <h2>$Price</h2>
         </div>
       </div>
-
     </section>
     <section class="cta">
       <h1>HUNGRY? BROWSE OUR FULL MENU</h1>
-      <p>The flame is lit and the pans are hot. There is a seat waiting at our table for you.</p>
+      <p>
+        The flame is lit and the pans are hot. There is a seat waiting at our
+        table for you.
+      </p>
       <button>Menu</button>
       <button>Order</button>
     </section>
     <footer class="footer">
       <div>
-        <img src="logo1.jpg" alt="" width="200px" height="200px"/>
+        <img src="logo1.jpg" alt="" width="200px" height="200px" />
       </div>
       <div>
         <h3>Home</h3>
@@ -176,9 +201,8 @@
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <hr>
+      <hr />
       <p>&copy; 2026 The Clean Plate. All rights reserved.</p>
-
     </footer>
   </body>
 </html>
