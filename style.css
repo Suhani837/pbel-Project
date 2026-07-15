@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'Google Sans', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 nav{
   display: flex;
   top:0;
@@ -11,6 +14,7 @@ nav{
   background-color: rgb(49, 47, 47);
   color: white;
   position: fixed;
+  z-index: 1000;
   width: 100%;
 }
 #logo{
@@ -58,7 +62,7 @@ nav{
   box-shadow: 3px 4px 2px #93403a;
 }
 .header{
-  background-color: #faf4f0;
+  background-color: #ffe6d691;
   width: 100%;
   min-height: 100vh;
   margin-top: 80px;
@@ -118,7 +122,7 @@ padding:20px;
 }
 #menu-button{
   border-radius:20px;
-  background-color: #e7e4e4;
+  background-color: #f4f3f3;
   display: flex;
   border:  #e7e4e4;
   justify-content: center;
@@ -160,6 +164,7 @@ padding:20px;
   border: 2px solid blue;
   padding: 10px;
   margin: 10px;
+  scroll-margin-top: 72px;
 
 }
 .leftBox{
@@ -333,10 +338,11 @@ li{
 
 .productList{
   height:100vh;
-  background-color: rgb(237, 209, 214);
+  background-color: rgb(237, 218, 222);
   margin: 10px;
   padding: 10px;
   border-radius: 15% 1%;
+  overflow: hidden;
 }
 .menucontent{
   margin:50px;
@@ -344,9 +350,182 @@ li{
 }
 
 .menucontent h1{
-  font-size: xx-large;
+  font-size: xxx-large;
+  margin-top:20px;
+  margin-bottom: 20px;
 }
 .sliderBox{
   margin:50px;
   padding: 10px;
+}
+
+.space{
+  display: flex;
+  justify-content: space-between;
+}
+.space button{
+  width:100px;
+  height:40px;
+  border-radius: 20px;
+  background-color: rgb(226, 183, 190);
+  box-shadow: rgb(239, 151, 165) 2px 3px;
+  border: none;
+}
+
+.space button:hover{
+  cursor: pointer;
+  background-color: whitesmoke;
+  box-shadow:rgb(201, 193, 193) 2px 3px;
+}
+
+.space p{
+  font-size: large;
+}
+
+.sliderBox{
+  display: flex;
+  gap:40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 36px 6px 52px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.sliderBox::-webkit-scrollbar {
+  display: none;
+}
+
+.item{
+  flex: 0 0 168px;
+  scroll-snap-align: start;
+  
+}
+
+.item img {
+  display: block;
+  width: 168px;
+  height: 202px;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #ddd; /* visible while image src is empty */
+}
+.item h3 {
+  margin: 10px 0 1px;
+  font: 700 14px/1.2 Arial, sans-serif;
+}
+
+.item p {
+  margin: 0;
+  font: 400 12px/1.2 Arial, sans-serif;
+}
+.item h2 {
+  margin: 8px 0 0;
+  font: 700 16px/1 Arial, sans-serif;
+}
+
+  .item img {
+    width: 170px;
+    height: 174px;
+  }
+
+.slider-control{
+  display: flex;
+  justify-content: flex-end;
+  gap:15px;
+  transform: translate(-50px,-40px);
+  
+}
+.slide-btn{
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: #f0aeb7;
+  color: #111;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  
+  
+}
+.slide-btn:hover{
+  background: #ffbfc8;
+  transform: scale(1.08);
+}
+
+.cta{
+  height:50vh;
+  background-color:rgba(25, 46, 25, 0.377);
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#cta-menu{
+  width:100px;
+  height:40px;
+  border-radius: 20px;
+  border: 0;
+  color: whitesmoke;
+  font-size: large;
+  cursor: pointer;
+  background-color: #f95b50e5;
+  box-shadow: #93403a 2px 2px;
+}
+#cta-order{
+  width:100px;
+  height:40px;
+  border-radius: 20px;
+  border: 0;
+  font-size: large;
+  box-shadow: rgb(146, 143, 143) 2px 2px;
+  cursor: pointer;
+}
+.cta-menu{
+  transform: translate(250px,-0px);
+}
+.cta-des{
+  transform: translate(70px,30px);
+  
+}
+.cta p{
+  transform: translate(0px,-20px);
+}
+.cta-button{
+  transform: translate(0px,-30px);
+}
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:50px;
+  margin-right: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  
+}
+.footer-nav h3{
+  margin:20px
+}
+hr{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.policy{
+  height:70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:50px;
+  margin-right: 50px;
+
+}
+.icons a{
+  margin:10px;
+  color: black;
 }

@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,11 +21,27 @@
     <nav>
       <img src="logo1.jpg" alt="a logo1" id="logo" />
       <div class="nav-links">
-        <a href="#">Menu</a>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
         <a href="#">Product</a>
         <a href="#" id="nav-login">Log in</a>
+        
+        <div id="overlay"></div>
+
+
+        <aside id="loginSidebar">
+          <button id="closeBtn">✕</button>
+          <h1>Login</h1>
+          <a href="account.html">or create an account</a>
+          <form action="">
+            <input type="tel" maxlength="10" placeholder="Phone Number">
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+          <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+        </aside>
+
+
         <a href="#" id="nav-order">Order now</a>
       </div>
     </nav>
@@ -46,7 +63,7 @@
         <img src="mainImg.jpg" alt="" />
       </div>
     </section>
-  <section class="feature">
+  <section class="feature" id="about">
       <div class="leftBox">
         <div class="welcome">WELCOME</div>
         <div class="featureHead">
@@ -114,9 +131,11 @@
     <section class="productList">
       <div class="menucontent">
       <div class="favourite">FAVOURITES</div>
-      <h1>Menu</h1>
+      <h1>MENU</h1>
+      <div class="space"> 
       <p>The dishes that keep our kitchen busy through the right</p>
       <button>View all</button>
+      </div>
       </div>
       <div class="sliderBox">
         <div class="item">
@@ -127,7 +146,43 @@
         </div>
         <div class="item">
           <img src="" alt="" />
-          <h3></h3>
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
+          <p>Dish Description</p>
+          <h2>$Price</h2>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <h3>Dish Name</h3>
           <p>Dish Description</p>
           <h2>$Price</h2>
         </div>
@@ -174,35 +229,51 @@
           <h2>$Price</h2>
         </div>
       </div>
+      <div class="slider-control">
+        <button class="slide-btn prev" >←</button>
+        <button class="slide-btn next">→</button>
+      </div>
     </section>
     <section class="cta">
-      <h1>HUNGRY? BROWSE OUR FULL MENU</h1>
+      <h1 class="cta-des">HUNGRY? BROWSE OUR FULL</h1>
+      <h1 class="cta-menu"> MENU</h1>
       <p>
         The flame is lit and the pans are hot. There is a seat waiting at our
         table for you.
       </p>
-      <button>Menu</button>
-      <button>Order</button>
+      <div class="buttons cta-button">
+      <button id="cta-menu">Menu</button>
+      <button id="cta-order">Order</button>
+      </div>
     </section>
-    <footer class="footer">
-      <div>
+    <footer>
+      <div class="footer" id="contact">
+      <div class="img">
         <img src="logo1.jpg" alt="" width="200px" height="200px" />
       </div>
-      <div>
+      <div class="footer-nav">
         <h3>Home</h3>
         <h3>Menu</h3>
         <h3>Contact us</h3>
         <h3>Our story</h3>
       </div>
-      <div>
+      <div class="icons">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
+      </div>
       <hr />
+      <div class="policy">
       <p>&copy; 2026 The Clean Plate. All rights reserved.</p>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+      <p>Cookie settings</p>
+      </div>
     </footer>
   </body>
+  <script src="login.js"></script>
+  <script src="main.js"></script>
 </html>
