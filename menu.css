@@ -87,6 +87,6 @@ button{
   color: rgb(86, 86, 196);
   font-size: 20px;
 }
-h2{
-
+#chinese, #italian, #north-indian, #beverage, #shake, #menu-trending, #pasteries{
+  scroll-margin-top: 100px;
 }
