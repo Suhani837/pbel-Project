@@ -1,1 +1,289 @@
-menu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="menu.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  <title>Menu</title>
+</head>
+<body>
+  <nav>
+      <img src="logo1.jpg" alt="a logo1" id="logo" />
+      <div class="nav-links">
+        <a href="menu.html">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Product</a>
+        <a href="#" id="nav-login">Log in</a>
+
+        <div id="overlay"></div>
+
+        <aside id="loginSidebar">
+          <button id="closeBtn">✕</button>
+          <h1>Login</h1>
+          <a href="#" id="signUp">or create an account</a>
+          <form action="">
+            <input type="tel" maxlength="10" placeholder="Phone Number" />
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+          <p>
+            By clicking on Login, I accept the Terms & Conditions & Privacy
+            Policy
+          </p>
+        </aside>
+
+        <aside id="signupSidebar">
+          <button id="closeBtnsign">✕</button>
+          <h1>SIGNUP</h1>
+          <a href="#">or login</a>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" maxlength="10" placeholder="Phone Number" />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+          <p>
+            By clicking on Login, I accept the Terms & Conditions & Privacy
+            Policy
+          </p>
+        </aside>
+        <a href="#" id="nav-order">Order now</a>
+      </div>
+    </nav>
+    <div class="menu-layout">
+    <aside>
+      <div class="menu-card">
+      <a href="">Products Trending Near You (3)</a>
+      <a href="">Chinese</a>
+      <a href="">Italian</a>
+      <a href="">North Indian</a>
+      <a href="">Pasteries</a>
+      <a href="">Beverages</a>
+      <a href="">Shakes</a>
+      
+      </div>
+    </aside>
+    </div>
+    <!-- <div class="menu-var">
+    <select name="variety" id="variety">
+      <button>All</button>
+      <button>Veg</button>
+      <button>Non Veg</button>
+    </select>
+    </div>
+    <div class="sort">
+      Sort/Filter 
+      <button><i class="fa-solid fa-sliders"></i></button>
+    </div> -->
+    <div class="menu-items">
+      <div class="menu-trending catagory ">
+        <h2>Products Trending Near You</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/ni 1.jpeg" alt=""></div>
+          <h3>Paneer Butter Masala</h3>
+          <p>Soft paneer in rich buttery tomato gravy.</p>
+          <h4>₹299</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/italian 1.jpeg" alt=""></div>
+          <h3>White Sauce Pasta</h3>
+          <p>Creamy pasta with rich white sauce.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/shake 2.jpeg" alt=""></div>
+          <h3>Blueberry Shake</h3>
+          <p>Creamy milkshake blended with fresh blueberries.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="chinese catagory">
+        <h2>Chinese</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/chinese 1.jpeg" alt=""></div>
+          <h3>Manchurian</h3>
+          <p>Crispy balls tossed in savory sauce.</p>
+          <h4>₹229</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/chinese 2.jpeg" alt=""></div>
+          <h3>Hakka Noodles</h3>
+          <p>Stir-fried noodles with vegetables and sauces.</p>
+          <h4>₹229</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/chinese 3.jpeg" alt=""></div>
+          <h3>Momos</h3>
+          <p>Steamed dumplings served with spicy chutney.</p>
+          <h4>₹199</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/chinese 4.jpeg" alt=""></div>
+          <h3>Spring Roll</h3>
+          <p>Crispy rolls filled with seasoned vegetables.</p>
+          <h4>₹199</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/chinese 5.jpeg" alt=""></div>
+          <h3>Fried Rice</h3>
+          <p>Wok-tossed rice with vegetables and sauces.</p>
+          <h4>₹219</h4>
+          <button>Add</button>
+        </div>
+        
+      </div>
+      <div class="italian catagory">
+        <h2>Italian</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/italian 1.jpeg" alt=""></div>
+          <h3>White Sauce Pasta</h3>
+          <p>Creamy pasta with rich white sauce.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/italian 2.jpeg" alt=""></div>
+          <h3>Red Sauce Pasta</h3>
+          <p>Pasta tossed in tangy tomato sauce.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/italian 3.jpeg" alt=""></div>
+          <h3>Pizza</h3>
+          <p>Cheesy pizza topped with fresh ingredients.</p>
+          <h4>₹299</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/italian 4.jpeg" alt=""></div>
+          <h3>Garlic Bread</h3>
+          <p>₹149</p>
+          <h4>Toasted bread topped with garlic butter.</h4>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="north-indian catagory">
+        <h2>North Indian</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/ni 1.jpeg" alt=""></div>
+          <h3>Paneer Butter Masala</h3>
+          <p>Soft paneer in rich buttery tomato gravy.</p>
+          <h4>₹299</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/n1 2.jpeg" alt=""></div>
+          <h3>Dal Makhani</h3>
+          <p>Creamy black lentils slow-cooked with spices.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/ni 3.jpeg" alt=""></div>
+          <h3>Dal Tadka</h3>
+          <p>₹199</p>
+          <h4>Yellow lentils tempered with aromatic spices.</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/ni 4.jpeg" alt=""></div>
+          <h3>Matar Paneer</h3>
+          <p>Soft paneer and peas in rich gravy.</p>
+          <h4>₹279</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/ni 5.jpeg" alt=""></div>
+          <h3>Mix Veg</h3>
+          <p>Fresh vegetables cooked with flavorful spices</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="pasteries catagory">
+        <h2>Pasteries</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/pastery 1.webp" alt="" width="200px" height="200px"></div>
+          <h3>Chocolate Pastry</h3>
+          <p>Rich chocolate cake with creamy layers.</p>
+          <h4>₹149</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/pastery 2.jpeg" alt=""></div>
+          <h3>Red Velvet Pastry</h3>
+          <p>Soft red velvet cake with creamy frosting.</p>
+          <h4>₹149</h4>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="beverage catagory">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/bev 1.jpeg" alt=""></div>
+          <h3>Mojito</h3>
+          <p>Refreshing mint and lime cooler.</p>
+          <h4>₹199</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/bev 2.jpeg" alt=""></div>
+          <h3>Coke</h3>
+          <p>Classic chilled carbonated soft drink.</p>
+          <h4>₹99</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/bev 3.jpeg" alt=""></div>
+          <h3>Iced Tea</h3>
+          <p>Chilled, refreshing tea served over ice.</p>
+          <h4>₹179</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/bev 4.jpeg" alt=""></div>
+          <h3>Boba Tea</h3>
+          <p>Refreshing tea with chewy tapioca pearls.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+      </div>
+      <div class="shake catagory">
+        <h2>Shakes</h2>
+        <div class="menu-item">
+          <div><img src="/menu images/shake 1.jpeg" alt=""></div>
+          <h3>Chocolate Shake</h3>
+          <p>Rich and creamy chocolate milkshake.Rich and creamy chocolate milkshake.</p>
+          <h4>₹229</h4>
+          <button>Add</button>
+        </div>
+        <div class="menu-item">
+          <div><img src="/menu images/shake 2.jpeg" alt=""></div>
+          <h3>Blueberry Shake</h3>
+          <p>Creamy milkshake blended with fresh blueberries.</p>
+          <h4>₹249</h4>
+          <button>Add</button>
+        </div>
+      </div>
+    </div>
+    
+</body>
+<script src="login.js"></script>
+<script src="signup.js"></script>
+<script src="main.js"></script>
+</html>

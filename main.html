@@ -9,7 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,26 +27,42 @@
         <a href="#contact">Contact</a>
         <a href="#">Product</a>
         <a href="#" id="nav-login">Log in</a>
-        
-        <div id="overlay"></div>
 
+        <div id="overlay"></div>
 
         <aside id="loginSidebar">
           <button id="closeBtn">✕</button>
           <h1>Login</h1>
-          <a href="account.html">or create an account</a>
+          <a href="#" id="signUp">or create an account</a>
           <form action="">
-            <input type="tel" maxlength="10" placeholder="Phone Number">
+            <input type="tel" maxlength="10" placeholder="Phone Number" />
             <button type="submit" id="submit">SUBMIT</button>
           </form>
-          <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+          <p>
+            By clicking on Login, I accept the Terms & Conditions & Privacy
+            Policy
+          </p>
         </aside>
 
-
+        <aside id="signupSidebar">
+          <button id="closeBtnsign">✕</button>
+          <h1>SIGNUP</h1>
+          <a href="#">or login</a>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" maxlength="10" placeholder="Phone Number" />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+          <p>
+            By clicking on Login, I accept the Terms & Conditions & Privacy
+            Policy
+          </p>
+        </aside>
         <a href="#" id="nav-order">Order now</a>
       </div>
     </nav>
-  <section class="header">
+    <section class="header">
       <div class="heading">
         <h1>FOOD THAT ARRIVES AS FAST AS HUNGER</h1>
       </div>
@@ -63,7 +80,7 @@
         <img src="mainImg.jpg" alt="" />
       </div>
     </section>
-  <section class="feature" id="about">
+    <section class="feature" id="about">
       <div class="leftBox">
         <div class="welcome">WELCOME</div>
         <div class="featureHead">
@@ -76,40 +93,47 @@
         </div>
         <div class="features">
           <ul>
-            <li> <i class="fa-solid fa-receipt"></i> No hidden charges on your initial order</li>
-            <li> <i class="fa-solid fa-leaf"></i>Fresh ingredients sourced from local markets daily</li>
-            <li> <i class="fa-solid fa-gift"></i>A welcome gift for your first real meal</li>
+            <li>
+              <i class="fa-solid fa-receipt"></i> No hidden charges on your
+              initial order
+            </li>
+            <li>
+              <i class="fa-solid fa-leaf"></i>Fresh ingredients sourced from
+              local markets daily
+            </li>
+            <li>
+              <i class="fa-solid fa-gift"></i>A welcome gift for your first real
+              meal
+            </li>
           </ul>
         </div>
         <div class="button">
-        <button id="order">Order</button>
-        <button id="menu">Menu </button>
+          <button id="order">Order</button>
+          <button id="menu">Menu</button>
         </div>
       </div>
       <div class="rightBox">
-        <img src="mainImg.jpg" alt=""  />
+        <img src="mainImg.jpg" alt="" />
       </div>
     </section>
     <section class="featureList">
       <div class="why">WHY</div>
       <h1>THREE THINGS THAT SEPARATE A GOOD MEAL FROM A MEMORY</h1>
       <div id="content">
-      <p>
-        We stripped away the unnecessary. What remains is the honest core of a
-        great kitchen.
-      </p>
+        <p>
+          We stripped away the unnecessary. What remains is the honest core of a
+          great kitchen.
+        </p>
       </div>
       <div class="boxes">
         <div class="box1">
-          
-          <img src="mainImg.jpg" alt="" width="200px" height="200px"/>
-          
-          
+          <img src="mainImg.jpg" alt="" width="200px" height="200px" />
+
           <h3>INGREDIENTS THAT STILL TASTE OF THE EARTH</h3>
           <p>We buy from farmers who know their soil, not from a catalog.</p>
         </div>
         <div class="box2">
-          <img src="mainImg.jpg" alt="" width="200px" height="200px"/>
+          <img src="mainImg.jpg" alt="" width="200px" height="200px" />
           <h3>SPEED THAT RESPECTS THE HUNGER</h3>
           <p>
             Our riders move with purpose. The food arrives hot, as it should.
@@ -124,18 +148,18 @@
         </div>
       </div>
       <div class="button" id="orderitem">
-      <button id="order">Order</button>
-      <button id="menu">About</button>
+        <button id="order">Order</button>
+        <button id="menu">About</button>
       </div>
     </section>
     <section class="productList">
       <div class="menucontent">
-      <div class="favourite">FAVOURITES</div>
-      <h1>MENU</h1>
-      <div class="space"> 
-      <p>The dishes that keep our kitchen busy through the right</p>
-      <button>View all</button>
-      </div>
+        <div class="favourite">FAVOURITES</div>
+        <h1>MENU</h1>
+        <div class="space">
+          <p>The dishes that keep our kitchen busy through the right</p>
+          <button>View all</button>
+        </div>
       </div>
       <div class="sliderBox">
         <div class="item">
@@ -230,50 +254,51 @@
         </div>
       </div>
       <div class="slider-control">
-        <button class="slide-btn prev" >←</button>
+        <button class="slide-btn prev">←</button>
         <button class="slide-btn next">→</button>
       </div>
     </section>
     <section class="cta">
       <h1 class="cta-des">HUNGRY? BROWSE OUR FULL</h1>
-      <h1 class="cta-menu"> MENU</h1>
+      <h1 class="cta-menu">MENU</h1>
       <p>
         The flame is lit and the pans are hot. There is a seat waiting at our
         table for you.
       </p>
       <div class="buttons cta-button">
-      <button id="cta-menu">Menu</button>
-      <button id="cta-order">Order</button>
+        <button id="cta-menu">Menu</button>
+        <button id="cta-order">Order</button>
       </div>
     </section>
     <footer>
       <div class="footer" id="contact">
-      <div class="img">
-        <img src="logo1.jpg" alt="" width="200px" height="200px" />
-      </div>
-      <div class="footer-nav">
-        <h3>Home</h3>
-        <h3>Menu</h3>
-        <h3>Contact us</h3>
-        <h3>Our story</h3>
-      </div>
-      <div class="icons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
+        <div class="img">
+          <img src="logo1.jpg" alt="" width="200px" height="200px" />
+        </div>
+        <div class="footer-nav">
+          <h3>Home</h3>
+          <h3>Menu</h3>
+          <h3>Contact us</h3>
+          <h3>Our story</h3>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
       <hr />
       <div class="policy">
-      <p>&copy; 2026 The Clean Plate. All rights reserved.</p>
-      <p>Privacy Policy</p>
-      <p>Terms of Service</p>
-      <p>Cookie settings</p>
+        <p>&copy; 2026 The Clean Plate. All rights reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>Cookie settings</p>
       </div>
     </footer>
   </body>
   <script src="login.js"></script>
   <script src="main.js"></script>
+  <script src="signup.js"></script>
 </html>
